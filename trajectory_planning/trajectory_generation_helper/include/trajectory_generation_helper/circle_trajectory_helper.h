@@ -1,6 +1,7 @@
 #pragma once
 
 #include <quadrotor_common/trajectory.h>
+
 #include <Eigen/Dense>
 
 namespace trajectory_generation_helper {

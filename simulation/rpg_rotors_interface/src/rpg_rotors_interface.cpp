@@ -1,12 +1,12 @@
 #include "rpg_rotors_interface/rpg_rotors_interface.h"
 
-#include <chrono>
-#include <thread>
-
 #include <quadrotor_common/geometry_eigen_conversions.h>
 #include <quadrotor_common/math_common.h>
 #include <quadrotor_common/parameter_helper.h>
 #include <std_srvs/Empty.h>
+
+#include <chrono>
+#include <thread>
 
 namespace rpg_rotors_interface {
 
@@ -93,7 +93,8 @@ void RPGRotorsInterface::lowLevelControlLoop(const ros::TimerEvent& time) {
             control_command_.rotor_thrusts[i] / rotor_thrust_coeff_;
         quadrotor_common::limit(&motor_speed_squared, 0.0,
                                 pow(max_rotor_speed_, 2.0));
-        desired_motor_speed.angular_velocities.push_back(sqrt(motor_speed_squared));
+        desired_motor_speed.angular_velocities.push_back(
+            sqrt(motor_speed_squared));
       }
     } else {
       ROS_ERROR_THROTTLE(1,

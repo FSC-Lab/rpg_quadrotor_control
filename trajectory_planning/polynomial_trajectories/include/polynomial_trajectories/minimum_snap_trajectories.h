@@ -1,9 +1,9 @@
 #pragma once
 
-#include <vector>
-
 #include <quadrotor_common/trajectory_point.h>
+
 #include <Eigen/Dense>
+#include <vector>
 
 #include "polynomial_trajectories/polynomial_trajectory.h"
 #include "polynomial_trajectories/polynomial_trajectory_settings.h"

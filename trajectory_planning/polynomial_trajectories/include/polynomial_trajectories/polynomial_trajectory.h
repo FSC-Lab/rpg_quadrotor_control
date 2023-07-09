@@ -1,10 +1,10 @@
 #pragma once
 
-#include <vector>
-
 #include <quadrotor_common/trajectory_point.h>
 #include <ros/duration.h>
+
 #include <Eigen/Dense>
+#include <vector>
 
 namespace polynomial_trajectories {
 

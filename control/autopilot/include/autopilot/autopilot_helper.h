@@ -6,6 +6,7 @@
 #include <quadrotor_common/trajectory_point.h>
 #include <quadrotor_msgs/AutopilotFeedback.h>
 #include <ros/ros.h>
+
 #include <Eigen/Dense>
 
 #include "autopilot/autopilot_states.h"

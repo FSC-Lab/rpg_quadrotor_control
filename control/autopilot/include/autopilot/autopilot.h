@@ -1,10 +1,5 @@
 #pragma once
 
-#include <atomic>
-#include <list>
-#include <mutex>
-#include <thread>
-
 #include <geometry_msgs/PoseStamped.h>
 #include <geometry_msgs/TwistStamped.h>
 #include <nav_msgs/Odometry.h>
@@ -21,6 +16,11 @@
 #include <ros/ros.h>
 #include <state_predictor/state_predictor.h>
 #include <std_msgs/Empty.h>
+
+#include <atomic>
+#include <list>
+#include <mutex>
+#include <thread>
 
 #include "autopilot/autopilot_states.h"
 

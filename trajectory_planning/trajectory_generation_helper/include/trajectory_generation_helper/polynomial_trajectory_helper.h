@@ -4,6 +4,7 @@
 #include <polynomial_trajectories/polynomial_trajectory_settings.h>
 #include <quadrotor_common/trajectory.h>
 #include <quadrotor_common/trajectory_point.h>
+
 #include <Eigen/Dense>
 
 namespace trajectory_generation_helper {

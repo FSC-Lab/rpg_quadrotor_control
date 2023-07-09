@@ -1,16 +1,16 @@
 #include "rpg_quadrotor_integration_test/rpg_quadrotor_integration_test.h"
 
-#include <gtest/gtest.h>
-#include <vector>
-
 #include <autopilot/autopilot_states.h>
+#include <gtest/gtest.h>
 #include <polynomial_trajectories/polynomial_trajectory_settings.h>
 #include <quadrotor_common/control_command.h>
 #include <quadrotor_common/geometry_eigen_conversions.h>
 #include <std_msgs/Bool.h>
 #include <trajectory_generation_helper/heading_trajectory_helper.h>
 #include <trajectory_generation_helper/polynomial_trajectory_helper.h>
+
 #include <Eigen/Dense>
+#include <vector>
 
 namespace rpg_quadrotor_integration_test {
 
