@@ -7,6 +7,8 @@
 #include <trajectory_generation_helper/heading_trajectory_helper.h>
 #include <trajectory_generation_helper/polynomial_trajectory_helper.h>
 
+#include "autopilot/autopilot.h"
+
 namespace autopilot {
 
 template <typename Tcontroller, typename Tparams>
