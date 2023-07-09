@@ -1,0 +1,28 @@
+If:
+  PathMatch: ".*/autopilot/.*"
+CompileFlags:
+  CompilationDatabase: ../../build/autopilot
+
+---
+If:
+  PathMatch: ".*/position_controller/*"
+CompileFlags:
+  CompilationDatabase: ../../build/position_controller
+
+---
+If:
+  PathMatch: ".*/polynomial_trajectories/.*"
+CompileFlags:
+  CompilationDatabase: ../../build/polynomial_trajectories
+
+---
+If:
+  PathMatch: ".*/trajectory_generation_helper/.*"
+CompileFlags:
+  CompilationDatabase: ../../build/trajectory_generation_helper
+
+---
+If:
+  PathMatch: ".*/rpg_rotors_interface/.*"
+CompileFlags:
+  CompilationDatabase: ../../build/rpg_rotors_interface
