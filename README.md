@@ -1,5 +1,16 @@
 # RPG Quadrotor Control
 
+## [FSC Fork]
+
+- Eliminates `eigen_catkin` dependency
+- Drop components
+  - Sbus bridge
+  - Manual flight assistant
+  - Vbat thrust calibration
+- Applies `clang-format` to all C++ source files
+- Applies `cmake-format` to all CMakeLists.txt
+- Automatically bump `cmake_minimum_required` to 3.14.0
+
 ## License
 
 The RPG Quadrotor Control repository provides packages that are intended to be used with [ROS](http://www.ros.org/).
