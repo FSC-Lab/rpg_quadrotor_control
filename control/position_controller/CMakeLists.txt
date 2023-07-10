@@ -5,10 +5,21 @@ project(position_controller)
 add_compile_options(-std=c++11)
 add_compile_options(-O3)
 
-find_package(catkin_simple REQUIRED)
-catkin_simple(ALL_DEPS_REQUIRED)
+find_package(Eigen3 REQUIRED)
+find_package(catkin REQUIRED COMPONENTS quadrotor_common roscpp)
 
-cs_add_library(${PROJECT_NAME} src/position_controller.cpp)
+catkin_package(
+  INCLUDE_DIRS
+  include
+  LIBRARIES
+  ${PROJECT_NAME}
+  CATKIN_DEPENDS
+  quadrotor_common
+  roscpp
+  DEPENDS
+  Eigen3)
 
-cs_install()
-cs_export()
+add_library(${PROJECT_NAME} src/position_controller.cpp)
+target_include_directories(${PROJECT_NAME} PUBLIC include
+                                                  ${catkin_INCLUDE_DIRS})
+target_link_libraries(${PROJECT_NAME} PUBLIC Eigen3::Eigen ${catkin_LIBRARIES})

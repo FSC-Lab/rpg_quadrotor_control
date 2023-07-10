@@ -11,12 +11,11 @@
   <author>Flavio Fontana</author>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <buildtool_depend>catkin_simple</buildtool_depend>
 
   <depend>quadrotor_common</depend>
   <depend>quadrotor_msgs</depend>
   <depend>roscpp</depend>
-  
+
   <export>
 
   </export>

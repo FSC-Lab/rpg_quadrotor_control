@@ -1,10 +1,4 @@
 repositories:
-  catkin_simple:
-    type: git
-    url: git@github.com:catkin/catkin_simple.git
-    version: master
-    type: git
-    version: master
   mav_comm:
     type: git
     url: git@github.com:ethz-asl/mav_comm.git

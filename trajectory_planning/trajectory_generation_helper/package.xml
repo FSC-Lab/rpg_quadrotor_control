@@ -10,14 +10,13 @@
   <author>Matthias Faessler</author>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <buildtool_depend>catkin_simple</buildtool_depend>
 
   <depend>polynomial_trajectories</depend>
   <depend>quadrotor_common</depend>
   <depend>roscpp</depend>
 
   <export>
-    
+
   </export>
 </package>
 

@@ -5,10 +5,19 @@ project(rpg_rotors_interface)
 add_compile_options(-std=c++11)
 add_compile_options(-O3)
 
-find_package(catkin_simple REQUIRED)
-catkin_simple(ALL_DEPS_REQUIRED)
+find_package(catkin REQUIRED COMPONENTS mav_msgs nav_msgs quadrotor_common
+                                        quadrotor_msgs roscpp std_srvs)
 
-cs_add_executable(rpg_rotors_interface src/rpg_rotors_interface.cpp)
+catkin_package(
+  CATKIN_DEPENDS
+  mav_msgs
+  nav_msgs
+  quadrotor_common
+  quadrotor_msgs
+  roscpp
+  std_srvs)
 
-cs_install()
-cs_export()
+add_executable(rpg_rotors_interface src/rpg_rotors_interface.cpp)
+target_include_directories(rpg_rotors_interface PRIVATE include
+                                                        ${catkin_INCLUDE_DIRS})
+target_link_libraries(rpg_rotors_interface PRIVATE ${catkin_LIBRARIES})

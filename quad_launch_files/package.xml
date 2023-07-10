@@ -8,9 +8,8 @@
   <license>MIT</license>
 
   <author>Matthias Faessler</author>
-  
+
   <buildtool_depend>catkin</buildtool_depend>
-  <buildtool_depend>catkin_simple</buildtool_depend>
 
   <export>
 
